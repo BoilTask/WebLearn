@@ -1,0 +1,64 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: radial-gradient(white, grey);
+}
+
+#container {
+	width: 1200px;
+	height: 600px;
+	/* border: solid 2px skyblue; */
+	margin: 100px auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+#music-list {
+	width: 200px;
+	height: 100%;
+	/* border: solid 1px red; */
+	background: linear-gradient(#FFFFFF, #FF9966);
+}
+
+#player-box {
+	width: 800px;
+	height: 100%;
+	border: solid 1px yellow;
+	overflow: hidden;
+}
+
+.box {
+	border-radius: 40px;
+	box-shadow: 0 0 10px 0 red;
+}
+
+#lyric-box {
+	height: 60%;
+	background: linear-gradient(white, #99CCFF);
+}
+
+#progress-box {
+	height: 20%;
+	background: linear-gradient(#99CCFF, white);
+}
+
+#control-box {
+	height: 20%;
+	display: flex;
+	justify-content: space-around;
+	align-items:center; 
+	background: linear-gradient(white, #87CEEB);
+}
+
+#control-box span {
+	font-size: 48px;
+	cursor: pointer;
+	display:inline-block;
+}
+
+#control-box span:hover {
+	text-shadow: 0 0 40px red;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>打字练习</title>
+		<style>
+			#char-box {
+				width: 600px;
+				height: 600px;
+				border: solid 1px #000000;
+				border-radius: 50%;
+
+				font-size: 350px;
+				text-align: center;
+				line-height: 600px;
+
+				margin: 0 auto;
+			}
+
+			#count-label {
+				font-size: 32px;
+				text-align: center;
+				font-weight:700;
+			}
+			.success{
+				color: green;
+			}
+			.error{
+				color: red;
+				animation-name: shake;
+				animation-duration: 100ms;
+				animation-iteration-count: 3;
+			}
+			@keyframes shake{
+				0%{
+					transform:translate(0,0);
+				}
+				50%{
+					transform:translate(-30px,0);
+				}
+				100%{
+					transform:translate(30px,0);
+				}
+			}
+			
+			.nextWord{
+				animation: zoomIn 300ms;
+			}
+			
+			@keyframes zoomIn{
+				0%{
+					transform: scale(0,0);
+				}
+				100%{
+					transform: scale(1,1);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="char-box">W</div>
+		<p id="count-label">
+			正确<span id="Correct">0</span>个，错误<span id="Error">0</span>个，正确率<span id="Percent">0</span>%<br>已过<span id="Second">0</span>秒
+		</p>
+		<script type="text/javascript">
+			var c;
+			var charBox = document.getElementById("char-box");
+
+			var cntCorrect = 0;
+			var cntError = 0;
+
+			var second = 0;
+
+			updateChar();
+
+			document.body.onkeydown = function(e) {
+
+				if (c == e.key.toUpperCase()) {
+					cntCorrect++;
+
+					charBox.classList.add("success");
+					setTimeout(function() {
+						charBox.classList.remove("success");
+					}, 300);
+				} else {
+					cntError++;
+					charBox.classList.add("error");
+					setTimeout(function() {
+						charBox.classList.remove("error");
+					}, 300);
+				}
+
+				setTimeout(function() {
+					updateChar();
+				}, 300);
+			}
+
+			function updateChar() {
+				var source = "QWERTYUIOPASDFGHJKLZXCVBNM1234567890";
+				var num = Math.floor(Math.random() * 36);
+				c = source[num];
+				charBox.textContent = c;
+
+				document.getElementById("Correct").textContent = cntCorrect;
+				document.getElementById("Error").textContent = cntError;
+				if (cntCorrect + cntError == 0) {
+					document.getElementById("Percent").textContent = 0.00;
+				} else {
+					document.getElementById("Percent").textContent = (cntCorrect / (cntCorrect + cntError) * 100).toFixed(2);
+				}
+
+				charBox.classList.remove("nextWord");
+
+				charBox.classList.add("nextWord");
+				setTimeout(function() {
+					charBox.classList.remove("nextWord");
+				}, 300);
+
+			}
+
+			setInterval(function() {
+				second++;
+				document.getElementById("Second").textContent = second;
+			}, 1000);
+		</script>
+	</body>
+</html>

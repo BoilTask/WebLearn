@@ -1,0 +1,103 @@
+/*html{
+	height: 100%;
+	width: 100%;
+}
+body{
+	height: 100%;
+	width: 100%;
+}
+
+table {
+	border: solid 1px black;
+	border-collapse: collapse;
+	width: 100%;
+} */
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+table {
+	border: solid 1px black;
+	border-collapse: collapse;
+	width: 500px;
+	height: 500px;
+}
+
+#tb td {
+	border: solid 1px black;
+}
+
+
+[state] {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+[state="blank"] {
+	background-image: url(img/blank.png);
+	background-size: 100% 100%;
+}
+
+[state="flag"] {
+	background-image: url(img/flag.png);
+	background-size: 100% 100%;
+}
+
+[state="1"]:after {
+	content: "1";
+	color: green
+}
+
+[state="2"]:after {
+	content: "2";
+	color: aquamarine;
+}
+
+[state="3"]:after {
+	content: "3";
+	color: aqua;
+}
+
+[state="4"]:after {
+	content: "4";
+	color: hotpink;
+}
+
+[state="5"]:after {
+	content: "5";
+	color: cornflowerblue;
+}
+
+[state="6"]:after {
+	content: "6";
+	color: darkorange;
+}
+
+[state="7"]:after {
+	content: "7";
+	color: blueviolet;
+}
+
+[state="8"]:after {
+	content: "8";
+	color: red;
+}
+
+.landmine {
+	background-image: url(img/boom_plain.png);
+	background-size: 100% 100%;
+}
+
+.boom {
+	background-image: url(img/boom_ex.png);
+	background-size: 100% 100%;
+}

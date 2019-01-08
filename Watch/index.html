@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>电子表</title>
+		<style>
+			html{
+				height: 100%;
+			}
+			body{
+				height: 100%;
+				background: radial-gradient(white, grey);
+				margin: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#pannel{
+				width: 800px;
+				height: 800px;
+				border: solid 1px #000;
+				border-radius: 50%;
+				
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#time-box{
+				border: solid 5px #9A9A9A;
+				width: 700px;
+				height: 200px;
+				
+				font-size: 60px;
+				color: #87CEEB;
+				text-shadow: 0 0 10px #68CE6B;
+				
+				text-align: center;
+				line-height: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="pannel">
+			<div id="time-box"></div>
+		</div>
+		<script type="text/javascript">
+			timeUpdate();
+			setInterval(timeUpdate, 1000);
+
+			function timeUpdate() {
+				var timeBox = document.getElementById("time-box");
+				var now = new Date();
+				var hour = now.getHours();
+				var minute = now.getMinutes();
+				var second = now.getSeconds();
+				if (hour < 10)
+					hour = "0" + hour;
+				if (minute < 10)
+					minute = "0" + minute;
+				if (second < 10)
+					second = "0" + second;
+				var time = hour + ":" + minute + ":" + second;
+				timeBox.textContent = time;
+			}
+		</script>
+	</body>
+</html>
