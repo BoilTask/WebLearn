@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+
+		<style>
+			/* 标签名选择器,按照标签名匹配页面中的标签,例如h1会匹配页面中所有的h1标签 */
+			/* 标签名选择器在实际开发中基本是不用的 */
+			h1 {
+				color: red;
+			}
+
+			/* id选择器,格式为:#xxxx ,效果为选择页面中id为xxxx的标签。 */
+			#first {
+				color: blue;
+			}
+
+			/* class选择器,格式为:.xxxx ,效果是选择页面中class值包含xxxx的标签 */
+			.big {
+				font-size: 30px;
+			}
+
+			.bold {
+				font-weight: bold;
+			}
+
+			/* 多个选择器复合使用 */
+			/* 选择页面中id值为box且class包含rect的div标签 */
+			div#box.rect {
+				color: aqua;
+			}
+		</style>
+
+	</head>
+	<body>
+		<h1>标签名选择器</h1>
+		<h1>标签名选择器</h1>
+
+		<!-- id属性是一个标签的唯一标识符，用于区分这个标签在页面中的唯一性，所以同一个页面中的标签的id不能相同 -->
+		<p id="first">id属性是一个标签的唯一标识符</p>
+
+		<!-- class属性表示一个标签的类型，通常用于给多个标签设置相同的样式 -->
+		<div class="big">class属性表示一个标签的类型</div>
+		<div class="big">class属性表示一个标签的类型</div>
+
+		<!-- 一个标签可以有多个class值，多个class值之间以空格隔开 -->
+		<div class="big bold">class属性表示一个标签的类型</div>
+
+		<div id="box" class="rect">复合选择器</div>
+
+		<!-- 
+			id选择器和class选择器的适用场景： 
+			如果是为页面中某个独特的标签添加样式，则适合使用id选择器。
+			如果是为页面中多个标签，或者是一个但是以后还会添加相同的标签，则适合使用class选择器。
+		-->
+
+	</body>
+</html>

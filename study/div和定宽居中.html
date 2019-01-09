@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			#banner {
+				/* div标签不设置宽度时宽度默认为100%(和父元素等宽) */
+				/* div默认高度为内容高度,如果没有内容则高度为0 */
+
+				/* background-color: yellow; */
+
+				/* height用于设置元素的高度 */
+				height: 400px;
+
+				/* 在页面中显示一个图片除了可以使用标签,还可以使用元素的背景图展示 */
+				/* background-image用于设置元素的背景图片,值需要写url(图片地址); */
+				background-image: url(banner.png);
+
+				/* background-position用于设置背景图片的位置,设置为50%可以让背景图片在元素内居中 */
+				background-position: 50% 50%;
+
+			}
+
+			#main {
+				background-color: cyan;
+				height: 1000px;
+
+				/* margin是外间距,表示这个元素距离相邻元素或父元素边界的距离 */
+				/* margin可以设置1个值或2个值或4个值 */
+				/* 设置1个值时表示4个方向的距离 */
+				/* 设置2个值时表示上下的和左右的距离 */
+				/* 设置4个值时表示上右下左的距离 */
+				/* margin: 100px 200px 300px 400px; */
+
+				/* 元素的左右margin设置为auto可以实现左右margin平分，配合固定的宽度，可以实现元素的定宽居中 */
+				width: 1000px;
+				margin: 0 auto;
+			}
+
+			body {
+				/* body元素有一个默认的8px的外间距,不需要时要主动设置为0 */
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- div是division的缩写，div标签用于将页面划分为若干个区域，是html中最常用的标签 -->
+		<div id="banner"></div>
+
+		<div id="main">
+
+		</div>
+
+	</body>
+</html>
