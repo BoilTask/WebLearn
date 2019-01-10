@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+
+		<style>
+			.rect {
+				width: 100px;
+				height: 100px;
+			}
+
+			#d1 {
+				background-color: aqua;
+
+				/* html元素有一个样式叫做position,表示定位方式,默认为static */
+				/* static:静态定位方式,静态定位的元素参与流式布局,且不能通过left、top等设置位置 */
+				position: static;
+			}
+
+			#d2 {
+				background-color: bisque;
+				/* position: relative表示相对定位,相对定位的元素参与流式布局， 可以使用left等在原有位置基础上进行微调 */
+				position: relative;
+				left: 20px;
+				top: 20px;
+			}
+
+			#d3 {
+				background-color: violet;
+			}
+
+			#container {
+
+				border: solid 1px black;
+
+				/* 如果希望自身内容中absolute定位的后代元素相对于自己进行定位,一般把自身定位设置为relative即可(如果设置为absolute也行,但是会导致自身脱离文档流，自身布局受影响) */
+				position: relative;
+
+			}
+
+			#d4 {
+				background-color: yellow;
+			}
+
+			#d5 {
+				background-color: teal;
+
+				/* position: absolute表示绝对定位,绝对定位的元素会脱离文档流,不参与流式布局。 */
+				/* 绝对定位必须配合left、top等样式设置位置，否则元素还会在它原有位置，且脱离文档流 */
+				/* absolute定位的元素,相对于离自己最近,position为非static的祖先元素进行定位。 */
+				position: absolute;
+				left: 200px;
+				top: 40px;
+			}
+
+			#d6 {
+				background-color: tomato;
+			}
+
+			#d7 {
+				background-color: slateblue;
+				/* fixed表示固定定位，固定定位的元素会脱离文档流，而且不再相对父元素进行100%定宽，不随页面滚动而滚动。 */
+				/* fixed定位的元素相对于根元素进行定位,而且必须配合top、left等使用，否则它会在原有位置 */
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+			}
+		</style>
+
+	</head>
+	<body>
+
+		<div class="rect" id="d1"></div>
+		<div class="rect" id="d2"></div>
+		<div class="rect" id="d3"></div>
+
+		<div id="container">
+			<div class="rect" id="d4"></div>
+			<div class="rect" id="d5"></div>
+			<div class="rect" id="d6"></div>
+		</div>
+
+		<div id="d7">
+			固定定位
+		</div>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+		<p>撑开页面</p>
+	</body>
+</html>

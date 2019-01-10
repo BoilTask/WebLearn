@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+
+		<style type="text/css">
+			#t1 {
+
+				/* border用于设置元素的边框，solid表示实线，1px表示边框线宽，black是边框颜色 */
+				border: solid 1px black;
+
+				/* table和td之间以及td和td之间默认边框是分离的,所以看起来像双边框,可以通过边框折叠样式改为单边框 */
+				border-collapse: collapse;
+
+				/* table是块元素，可以设置宽高（但是一般都不设置高度），如果不设置宽高，则宽高被内容td撑开。如果设置了宽，则按照设置的宽显示，并且如果其中的td没有设置宽高的话，同一行td会按照内容长度等比例分配table的宽度。 */
+				width: 600px;
+			}
+
+			/* id为t1的元素中的td元素 */
+			#t1 td {
+				border: solid 1px black;
+
+				text-align: center;
+
+				/* td元素如果不设置宽高，宽高取决于内容，也取决于同行或同列的其他td宽高 */
+				/* td也可以设置宽高 */
+				/*width: 200px; 
+				height: 50px; */
+				/* 但是td一般不设置宽高 */
+			}
+
+			#t1 th {
+				border: solid 1px black;
+			}
+			
+			.bold{
+				font-weight: bold;
+			}
+		</style>
+
+	</head>
+	<body>
+		<!-- table是表格标签 -->
+		<table id="t1">
+			<!-- thead表示表头标签，一般用于显示表的名字，可省略 -->
+			<thead>
+				<!-- tr表示表中的一行 -->
+				<tr>
+					<!-- th表示表头中的一个单元格 -->
+					<th></th>
+					<th>星期一</th>
+					<th>星期二</th>
+					<th>星期三</th>
+				</tr>
+			</thead>
+			<!-- tbody表示表的主体 -->
+			<tbody>
+				<tr>
+					<!-- td表示表主体中的单元格 -->
+					<td rowspan="2"><b>上午</b></td>
+					<td>语文语文</td>
+					<td>数学</td>
+					<td>英语</td>
+				</tr>
+				<tr>
+					<td>化学</td>
+					<td>物理</td>
+					<td>生物</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="bold">下午</td>
+					<td>历史</td>
+					<td>政治</td>
+					<td>体育</td>
+				</tr>
+				<tr>
+					<td>地理</td>
+					<td>物理</td>
+					<td>数学</td>
+				</tr>
+				<tr>
+					<td class="bold">晚上</td>
+					<td colspan="3">自习</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<!-- table中如果不写tbody，直接写tr+td，也能运行，但是这是一种不严谨的写法 -->
+		<table>
+			<tr>
+				<td>第1行第1列</td>
+				<td>第1行第2列</td>
+				<td>第1行第3列</td>
+			</tr>
+			<tr>
+				<td>第2行第1列</td>
+				<td>第2行第2列</td>
+				<td>第2行第3列</td>
+			</tr>
+			
+		</table>
+		
+	</body>
+</html>

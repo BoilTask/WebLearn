@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>费用报销单</title>
+		<style>
+			main {
+				font-family: "楷体";
+				width: 1000px;
+				margin: 0 auto;
+				position: relative;
+			}
+
+			h1 {
+				margin: 0;
+				text-align: center;
+				letter-spacing: 20px;
+			}
+
+			h1 span {
+				letter-spacing: 0;
+			}
+
+			.line {
+				border-top: solid 1px black;
+				border-bottom: solid 1px black;
+				height: 3px;
+				width: 250px;
+				margin: 0 auto 10px auto;
+			}
+
+			#expensetable {
+				border: solid 1px black;
+				border-collapse: collapse;
+				font-size: 20px;
+			}
+
+			#expensetable td {
+				border: solid 1px black;
+				height: 50px;
+			}
+
+			.wsmall {
+				width: 50px;
+			}
+
+			.wmid {
+				width: 150px;
+			}
+
+			.wbig {
+				width: 400px;
+			}
+			.wsmid {
+				width: 200px;
+			}
+
+			.spacebig {
+				text-align: center;
+				letter-spacing: 100px;
+			}
+			
+			.spacebig span {
+				letter-spacing: 0;
+			}
+			.spacesmall {
+				text-align: center;
+				letter-spacing: 5px;
+			}
+
+			.spacesmall span {
+				letter-spacing: 0;
+			}
+			.spacemid span{
+				letter-spacing: 32px;
+			}
+			
+			.spancenter{
+				text-align:center;
+			}
+			.asidespan{
+				position: absolute;
+				width: 30px;
+				top: 150px;
+				left: -30px;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1>费用报销<span>单</span></h1>
+			<div class="line"></div>
+			<p>报销部门：&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;年&emsp;&emsp;月&emsp;&emsp;日填&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;单据及附件共<u>&emsp;&emsp;&emsp;</u>页 </p>
+			<table id="expensetable">
+				<tbody>
+					<tr>
+						<td class="wbig spacebig">用<span>途</span></td>
+						<td class="wmid spacesmall">金额（元）</td>
+						<td class="wsmall spancenter" rowspan="4">备<br><br><br>注</td>
+						<td class="wbig" rowspan="4" colspan="3"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td class="spancenter" rowspan="3">部<br>门<br>审<br>批</td>
+						<td rowspan="3" colspan="3"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="spacebig">合<span>计</span></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="spacemid" colspan="2">金额大写<span>：拾万仟佰拾元角分</span></td>
+						<td colspan="2" class="wsmid">原借款：&emsp;&emsp;&emsp;&emsp;元</td>
+						<td colspan="2" class="wsmid">应退余款：&emsp;&emsp;&emsp;&emsp;元</td>
+					</tr>
+
+				</tbody>
+			</table>
+			<p>&emsp;&emsp;&emsp;&emsp;会计主管&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;会计&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;出纳&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;报销人&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;领款人</p>
+		<p class="asidespan">标准会计凭证系列&emsp;深圳洁立信出品</p>
+		</main>
+	</body>
+</html>

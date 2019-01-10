@@ -6,7 +6,7 @@
 		<title>个人主页</title>
 		<style>
 			body {
-				margin: 0;
+				margin: 46px 0 0 0;
 				background: url(bg.png);
 			}
 
@@ -24,6 +24,7 @@
 
 			#Article {
 				text-align: center;
+				font-family: "楷体";
 			}
 
 			p {
@@ -32,6 +33,7 @@
 			}
 
 			#footer {
+				margin-top: 50px;
 				height: 100px;
 				background-color: #000000;
 			}
@@ -45,21 +47,111 @@
 				margin-top: 30px;
 				color: #FFFFFF;
 			}
+
+			.nav {
+
+				background-color: #6495ED;
+				position: fixed;
+				width: 100%;
+
+				left: 0;
+				top: 0;
+			}
+
+			.nav ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			.nav li {
+				display: inline-block;
+			}
+
+			.nav a {
+				display: inline-block;
+				padding: 10px 20px;
+
+				text-decoration: none;
+				font-size: 20px;
+
+				color: black;
+			}
+
+			.nav a:hover {
+				background-color: sandybrown;
+				color: white;
+			}
+
+			#classmateDiv {
+				width: 800px;
+				height: 400px;
+				position: relative;
+				margin: 0 auto;
+				border: solid 1px black;
+				
+				background-color: #EEEEEE;
+				
+			}
+			
+			#classmate1{
+				position: absolute;
+				left: 50px;
+				top: 200px;
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+			}
+			#classmate2{
+				position: absolute;
+				left: 300px;
+				top: 50px;
+				border-radius: 50%;
+			}
+			#classmate3{
+				position: absolute;
+				left: 600px;
+				top: 250px;
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+			}
+			
 		</style>
 	</head>
 	<body>
+
+		<nav class="nav">
+			<div class="container">
+				<ul>
+					<li><a href="#profile">个人简介</a></li>
+					<li><a href="#school">学校简介</a></li>
+					<li><a href="#classmate">我的同学</a></li>
+				</ul>
+			</div>
+		</nav>
+
 		<div id="banner"></div>
 
 		<div class="container">
 			<h1 id="Article">欧阳天的个人主页</h1>
-			<h2>个人简介</h2>
+			<h2 id="profile">个人简介</h2>
 			<p>欧阳天，男，1997年12月12日出生。</p>
-			<h2>学校简介</h2>
-			<p>河南理工大学（Henan Polytechnic University）位于河南省焦作市，是中国第一所矿业高等学府、河南省建立最早的高等学校，为河南省与应急管理部共建高校、河南省属重点大学。入选国家“中西部高校基础能力建设工程”、“卓越工程师教育培养计划”、“卓越工程师教育培养计划2.0”、“新工科研究与实践项目”，教育部本科教学工作水平评估优秀学校。</p>
+			<h2 id="school">学校简介</h2>
+			<p>河南理工大学（Henan Polytechnic
+				University）位于河南省焦作市，是中国第一所矿业高等学府、河南省建立最早的高等学校，为河南省与应急管理部共建高校、河南省属重点大学。入选国家“中西部高校基础能力建设工程”、“卓越工程师教育培养计划”、“卓越工程师教育培养计划2.0”、“新工科研究与实践项目”，教育部本科教学工作水平评估优秀学校。</p>
 			<p>学校前身是1909年由英国福公司兴办的焦作路矿学堂，历经河南福中矿务学校、福中矿务专门学校、福中矿务大学、私立焦作工学院、西北工学院、国立焦作工学院、焦作矿业学院等历史时期，1995年恢复焦作工学院校名，2004年更名为河南理工大学。2002年后相继获得博士学位授予权、入选省重点建设骨干高校。</p>
 			<p>截至2018年5月，学校有南校区、北校区、西校区三个校区，占地面积4100余亩，建筑面积140余万平方米，教学科研仪器设备总值近5.25亿元；开设22个教学学院和后备军官学院、国际教育学院、继续教育学院、安全技术培训学院，设有74个本科专业，涵盖工、理、管、经、法、文、教、艺、医九大学科门类，5个博士后科研流动站、6个一级学科博士点、20个一级学科硕士点、8个硕士专业学位授权类别；现有教职工3108人，有全日制在校生40000余人，其中研究生4000多人。</p>
-			<div align="center"><img class="itemcenter" src="hpu.jpg" alt="HPU校园"></div>
-
+			<div align="center">
+				<img class="itemcenter" src="hpu.jpg" alt="HPU校园">
+			</div>
+			<h2 id="classmate">我的同学</h2>
+			<div id="classmateDiv">
+				<img id="classmate1" src="classmate1.jpg" alt="classmate1">
+				<img id="classmate2" src="classmate2.jpg" alt="classmate2">
+				<img id="classmate3" src="classmate3.jpg" alt="classmate3">
+			</div>
+			
 		</div>
 		<div id="footer">
 			<div class="container footerDiv">

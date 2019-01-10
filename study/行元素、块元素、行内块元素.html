@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+
+		<style type="text/css">
+			#d1 {
+				background-color: red;
+			}
+
+			#d2 {
+				background-color: green;
+				height: 50px;
+				/* css中长度可以进行简单的四则运算 */
+				width: calc(50% - 100px);
+			}
+
+			#d3 {
+				background-color: blue;
+				height: 80px;
+				width: 100px;
+			}
+
+			#s1 {
+
+				background-color: cadetblue;
+
+			}
+
+			#s2 {
+				background-color: cyan;
+			}
+
+			#s3 {
+				background-color: chartreuse;
+			}
+
+			/* img标签是行内块元素,默认显示原始9图片尺寸,如果只设置宽度,则高度会等比例缩放,只设置高度宽度会等比例缩放,宽高都设置则按照设置的宽高显示 */
+			#i1 {
+				width: 100px;
+			}
+
+			#i2 {
+				height: 100px;
+			}
+
+			#i3 {
+				width: 300px;
+				height: 100px;
+			}
+			
+			#box{
+				/* 行元素和行内块元素,都可以通过设置父元素的文本对齐方式实现在父元素中居中。（块元素通过margin:auto实现居中） */
+				text-align: center;
+			}
+			
+			#s4{
+				/* display样式，用于设置一个元素的布局展示类型，可以设置为行元素、块元素或行内块元素 */
+				/* block表示块元素,inline表示行元素,inline-block表示行内块 */
+				display: block;
+				
+				width: 100px;
+				height: 100px;
+				background-color: brown;
+			}
+			
+		</style>
+
+	</head>
+	<body>
+
+		<!-- html元素，按照布局显示方式主要可以分为3种：行元素（inline）、块元素（block）、行内块元素（inline-block） -->
+
+		<!-- 块元素，块元素独占一行，可以设置宽高，如果不设置宽高，大部分块元素宽度默认为父元素宽度的100%，高度为内容高度 -->
+
+		<!-- 块元素包含：div、h1~h6、p、…… -->
+
+		<div id="d1">第一个div</div>
+		<div id="d2"></div>
+		<div id="d3"></div>
+
+		<!-- 行元素，行元素会从左向右排列，不独占一行，行元素不能设置宽高，宽高取决于自身内容。 -->
+
+		<!-- 行元素包含：span、b、s、i、a、…… -->
+
+
+		<span id="s1">span1</span>
+		<span id="s2">span2</span>
+		<span id="s3">span3</span>
+
+
+		<!-- 行内块元素不独占一行，从左向右排列，可以设置宽高，不设置宽高时，不同的元素有不同的默认宽高 -->
+		<!-- 行内块元素包含：img、input、button、…… -->
+
+		<div id="box">
+
+			<img id="i1" src="html5.jpg">
+			<img id="i2" src="html5.jpg">
+			<img id="i3" src="html5.jpg">
+
+		</div>
+		
+		<!-- 一个元素的布局展示类型是可以修改的，所以我们说div是块元素，意思是div的display样式默认为block -->
+
+		<span id="s4"></span>
+
+	</body>
+</html>

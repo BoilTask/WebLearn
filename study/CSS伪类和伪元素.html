@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+
+		<style>
+			/* CSS伪类,用于设置元素在某些情况下或元素的某些部分的样式 */
+
+			#s1 {
+				/* padding,内间距,表示元素内容和元素边框的距离 */
+				padding: 4px;
+			}
+
+			/* hover：当鼠标指针在元素上时触发 */
+			#s1:hover {
+				background-color: yellow;
+			}
+
+			#s2:active {
+				font-weight: bold;
+			}
+
+			#a1 {
+				text-decoration: none;
+			}
+
+			/* focus：当元素获得焦点时触发 */
+			#a1:focus {
+				background-color: aqua;
+			}
+
+			/* visited：a标签的地址访问过时触发 */
+			#a1:visited {
+				color: blue;
+			}
+
+			#p1 {
+				text-indent: 2em;
+			}
+
+			/* 只针对元素内容的第一个字符生效 */
+			#p1:first-letter {
+				font-size: 30px;
+				color: red;
+			}
+
+			/* 只针对元素内容的第一行生效 */
+			#p1:first-line {
+				color: green;
+			}
+
+			/* 伪元素：依附于真正的元素，通过CSS生成的新的元素 */
+
+			/* before用于设置元素的前缀元素 */
+			#s3:before {
+				content: "$";
+				color: green;
+			}
+
+			/* after用于设置元素的后缀元素 */
+			#s3:after {
+				content: "元";
+				color: red;
+			}
+		</style>
+
+	</head>
+	<body>
+		<span id="s1">hover</span>
+		<span id="s2">active</span>
+
+		<a id="a1" href="https://weibo.com/">新浪微博</a>
+
+		<p id="p1">据金湖县委宣传部通报，2019年1月7日，该县黎城卫生院发生了一起口服过期疫苗事件。事件发生后，该县县委、县政府立即成立应急指挥部，统筹协调事件处置工作。通过对接种儿童家长的逐一电话排查，截至9日下午4时，该县共计145名儿童接种了过期脊灰疫苗。经调查，该疫苗厂家为北京北生研生物制品有限公司，批号为201612158，有效期为2018年12月11日，该批次疫苗系2017年5月9日由淮安市疾控中心配送至金湖县疾控中心，金湖县疾控中心于2017年5月18日冷链配送至黎城卫生院，疫苗相关资料齐全。2018年12月12日至2019年1月7日，黎城卫生院已使用过期脊灰疫苗21支，剩余69支未使用。</p>
+
+		<span id="s3">12</span>
+
+	</body>
+</html>

@@ -188,7 +188,6 @@ document.body.onkeydown = function(e) {
 	
 	}
 }
-……
 ```
 
 ## 20190108
@@ -329,7 +328,82 @@ CSS语法结构：
 
 #### 作业：个人主页
 
+重点：banner图、定宽居中
+
 详见项目：[个人主页](https://boiltask.coding.me/weblearn/HomePage)
 
 可查看源代码文件以方便理解
 
+## 20190110
+
+### 布局、定位、表格、列表
+
+#### 常用文本标签和HTML语义化
+
+详见文件：[常用文本标签和HTML语义化](https://boiltask.coding.me/weblearn/study/常用文本标签和HTML语义化.html)
+
+可查看源代码文件以方便理解
+
+#### 行元素、块元素、行内块元素
+
+详见文件：[行元素、块元素、行内块元素](https://boiltask.coding.me/weblearn/study/行元素、块元素、行内块元素.html)
+
+可查看源代码文件以方便理解
+
+#### 文档流
+
+在html页面中，元素按照从上到下，从左到右的顺序依次排列，每个元素在页面布局中都有自己的位置。
+
+元素在页面中排布的结构顺序，叫做页面的文档流。
+
+正常情况下，每一个元素在文档流中都有自己的位置。如果某个元素脱离了文档流，那么这个元素将不再参与流式布局，文档流中也就不再有这个元素的位置。
+
+一个元素的内部也是一个内部文档流。
+
+详见文件：[文档流](https://boiltask.coding.me/weblearn/study/文档流.html)
+
+可查看源代码文件以方便理解
+
+#### 表格标签
+
+详见文件：[表格标签](https://boiltask.coding.me/weblearn/study/表格标签.html)
+
+可查看源代码文件以方便理解
+
+#### CSS伪类和伪元素
+
+详见文件：[CSS伪类和伪元素](https://boiltask.coding.me/weblearn/study/CSS伪类和伪元素.html)
+
+可查看源代码文件以方便理解
+
+#### 有序列表和无序列表
+
+详见文件：[有序列表和无序列表](https://boiltask.coding.me/weblearn/study/有序列表和无序列表.html)
+
+可查看源代码文件以方便理解
+
+#### 页内跳转
+
+详见文件：[页内跳转](https://boiltask.coding.me/weblearn/study/页内跳转.html)
+
+可查看源代码文件以方便理解
+
+#### 作业
+
+##### 个人主页
+
+详见项目：[个人主页](https://boiltask.coding.me/weblearn/HomePage)
+
+可查看源代码文件以方便理解
+
+##### div布局
+
+详见项目：[div布局](https://boiltask.coding.me/weblearn/homework/divlayout.html)
+
+可查看源代码文件以方便理解
+
+##### 费用报销单
+
+详见项目：[费用报销单](https://boiltask.coding.me/weblearn/homework/expensetable.html)
+
+可查看源代码文件以方便理解
