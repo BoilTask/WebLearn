@@ -1,3 +1,7 @@
+# WEB前端学习记录
+## 项目部署
+本项目目前基于Coding Pages部署，可通过域名：[http://weblearn.boiltask.com](http://weblearn.boiltask.com)访问。
+
 ## 20190104
 
 ### 知识点
@@ -219,7 +223,7 @@ html文件本质是一个纯文本文件，它内部使用标签记录文本内�
 
 #### HTML基本结构
 
-详见文件：[HTML基本结构](https://boiltask.coding.me/weblearn/study/HTML基本结构.html)
+详见文件：[HTML基本结构](study/HTML基本结构.html)
 
 可查看源代码文件以方便理解
 
@@ -265,23 +269,23 @@ yyyyyyyy就是xxx标签的内容
 
 属性可以只有属性名，没有属性值。
 
-![HTML标签结构](https://boiltask.coding.me/weblearn/study/HTML标签结构.png)
+![HTML标签结构](study/HTML标签结构.png)
 
 #### HTML常用基本标签
 
-详见文件：[HTML常用基本标签](https://boiltask.coding.me/weblearn/study/HTML常用基本标签.html)
+详见文件：[HTML常用基本标签](study/HTML常用基本标签.html)
 
 可查看源代码文件以方便理解
 
 #### HTML转义字符
 
-详见文件：[HTML转义字符](https://boiltask.coding.me/weblearn/study/HTML转义字符.html)
+详见文件：[HTML转义字符](study/HTML转义字符.html)
 
 可查看源代码文件以方便理解
 
 #### HTML行内样式和CSS
 
-详见文件：[HTML行内样式和CSS](https://boiltask.coding.me/weblearn/study/HTML行内样式和CSS.html)
+详见文件：[HTML行内样式和CSS](study/HTML行内样式和CSS.html)
 
 可查看源代码文件以方便理解
 
@@ -306,23 +310,23 @@ CSS语法结构：
 
 一个样式表中可以有多条样式规则。
 
-![CSS结构](https://boiltask.coding.me/weblearn/study/CSS结构.png)
+![CSS结构](study/CSS结构.png)
 
 #### CSS基本选择器
 
-详见文件：[CSS基本选择器](https://boiltask.coding.me/weblearn/study/CSS基本选择器.html)
+详见文件：[CSS基本选择器](study/CSS基本选择器.html)
 
 可查看源代码文件以方便理解
 
 #### CSS基本样式
 
-详见文件：[CSS基本样式](https://boiltask.coding.me/weblearn/study/CSS基本样式.html)
+详见文件：[CSS基本样式](study/CSS基本样式.html)
 
 可查看源代码文件以方便理解
 
 #### div和定宽居中
 
-详见文件：[div和定宽居中](https://boiltask.coding.me/weblearn/study/div和定宽居中.html)
+详见文件：[div和定宽居中](study/div和定宽居中.html)
 
 可查看源代码文件以方便理解
 
@@ -330,7 +334,7 @@ CSS语法结构：
 
 重点：banner图、定宽居中
 
-详见项目：[个人主页](https://boiltask.coding.me/weblearn/HomePage)
+详见项目：[个人主页](HomePage)
 
 可查看源代码文件以方便理解
 
@@ -340,13 +344,13 @@ CSS语法结构：
 
 #### 常用文本标签和HTML语义化
 
-详见文件：[常用文本标签和HTML语义化](https://boiltask.coding.me/weblearn/study/常用文本标签和HTML语义化.html)
+详见文件：[常用文本标签和HTML语义化](study/常用文本标签和HTML语义化.html)
 
 可查看源代码文件以方便理解
 
 #### 行元素、块元素、行内块元素
 
-详见文件：[行元素、块元素、行内块元素](https://boiltask.coding.me/weblearn/study/行元素、块元素、行内块元素.html)
+详见文件：[行元素、块元素、行内块元素](study/行元素、块元素、行内块元素.html)
 
 可查看源代码文件以方便理解
 
@@ -360,31 +364,31 @@ CSS语法结构：
 
 一个元素的内部也是一个内部文档流。
 
-详见文件：[文档流](https://boiltask.coding.me/weblearn/study/文档流.html)
+详见文件：[文档流](study/文档流.html)
 
 可查看源代码文件以方便理解
 
 #### 表格标签
 
-详见文件：[表格标签](https://boiltask.coding.me/weblearn/study/表格标签.html)
+详见文件：[表格标签](study/表格标签.html)
 
 可查看源代码文件以方便理解
 
 #### CSS伪类和伪元素
 
-详见文件：[CSS伪类和伪元素](https://boiltask.coding.me/weblearn/study/CSS伪类和伪元素.html)
+详见文件：[CSS伪类和伪元素](study/CSS伪类和伪元素.html)
 
 可查看源代码文件以方便理解
 
 #### 有序列表和无序列表
 
-详见文件：[有序列表和无序列表](https://boiltask.coding.me/weblearn/study/有序列表和无序列表.html)
+详见文件：[有序列表和无序列表](study/有序列表和无序列表.html)
 
 可查看源代码文件以方便理解
 
 #### 页内跳转
 
-详见文件：[页内跳转](https://boiltask.coding.me/weblearn/study/页内跳转.html)
+详见文件：[页内跳转](study/页内跳转.html)
 
 可查看源代码文件以方便理解
 
@@ -392,18 +396,24 @@ CSS语法结构：
 
 ##### 个人主页
 
-详见项目：[个人主页](https://boiltask.coding.me/weblearn/HomePage)
+详见项目：[个人主页](HomePage/)
 
 可查看源代码文件以方便理解
 
 ##### div布局
 
-详见项目：[div布局](https://boiltask.coding.me/weblearn/homework/divlayout.html)
+详见项目：[div布局](homework/divlayout.html)
 
 可查看源代码文件以方便理解
 
 ##### 费用报销单
 
-详见项目：[费用报销单](https://boiltask.coding.me/weblearn/homework/expensetable.html)
+详见项目：[费用报销单](homework/expensetable.html)
 
 可查看源代码文件以方便理解
+
+## 20190111
+
+### 背景图片、边框、圆角、盒模型、浮动
+
+#### 常用文本标签和HTML语义化
