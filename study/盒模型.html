@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			#d1 {
+				width: 100px;
+				height: 100px;
+				background-color: aqua;
+				border: solid 100px red;
+
+				padding: 100px;
+
+				margin: 100px;
+				/* 一个元素在浏览器中都会被渲染成一个矩形的元素盒，这个元素盒从里到外分为4个部分：内容盒、内间距盒、边框盒、外间距盒，这四个部分统称为一个元素的盒模型 */
+
+				/* 默认情况下，为一个元素设置宽高，设置的是内容盒的宽高，如果再设置内间距或边框，会导致元素显示的实际尺寸增大 */
+
+				/* box-sizing：元素尺寸计算方式，默认为content-box，以内容盒进行计算。 */
+				/* border-box表示以边框盒进行计算 */
+				box-sizing: border-box;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div id="d1">
+			盒模型
+		</div>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			body {
+				background-image: url(bg.jpg);
+				
+				/* 设置元素内容滚动时，背景不随之滚动，背景图片固定 */
+				background-attachment: fixed;
+			}
+
+			#d1 {
+				border: solid 1px black;
+				width: 1000px;
+				height: 600px;
+				/* background-image，设置元素的背景图片，值为url(图片地址) */
+				background-image: url(bg2.jpg);
+
+				/* 背景图片默认会按照原始图片尺寸显示，如果元素尺寸大于图片尺寸则会重复显示，如果元素尺寸小于图片尺寸，则只显示图片的一部分，超出的部分不显示 */
+
+				/* background-repeat，设置背景重复显示，no-repeat为不重复显示 */
+				background-repeat: no-repeat;
+
+				/* background-position，设置背景图片位置，50% 50%可以设置背景图片居中 */
+				background-position: 50% 50%;
+
+				/* background-size，设置背景尺寸，100% 100%可以实现背景图和元素一样大 */
+				/* background-size: 100% 100%; */
+
+				/* background-size，设置为cover保证较短的方向铺满元素，较长的方向会等比例缩放，保证元素中不会有空白区域 */
+				/* background-size: cover; */
+
+				/* 较长的一侧铺满，较短的一侧等比例缩放，保证图片内容不会溢出元素之外 */
+				background-size: contain;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="d1">
+
+		</div>
+		<p>第1行</p>
+		<p>第2行</p>
+		<p>第3行</p>
+		<p>第4行</p>
+		<p>第5行</p>
+		<p>第6行</p>
+		<p>第7行</p>
+		<p>第8行</p>
+		<p>第9行</p>
+		<p>第10行</p>
+	</body>
+</html>

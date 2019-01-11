@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			#box {
+				width: 100px;
+				height: 100px;
+
+				/* borader，用于设置元素的边框，border样式其实是border-style，border-width，border-color的总和 */
+				/* border: solid 1px black;
+
+				border-style: solid;
+				border-width: 1px; 
+				border-color: black*/
+
+				/* 也可以单独设置某一边的边框 */
+
+				/* double：双边框线 */
+				border-top: double 10px red;
+
+				/* dashed：虚线 */
+				border-left: dashed 5px blue;
+
+				/* dotted：点状线 */
+				border-bottom: dotted 5px green;
+
+				/* solid：实线 */
+				border-right: solid 5px grey;
+
+			}
+
+			/* hr是块元素，有默认的边框 */
+			#hr {
+				border-top: dotted 1px red;
+				border-bottom: dotted 2px pink;
+			}
+
+			#d2 {
+				width: 100px;
+				height: 100px;
+				border: solid 1px black;
+
+				/* border-radius，设置元素圆角的半径 */
+				/* border-radius: 10px; */
+
+				/* 元素可以分别设置4个角的圆角 */
+
+				/* 设置左上角的圆角 */
+				border-top-left-radius: 10px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 30px;
+				border-bottom-left-radius: 40px;
+
+			}
+
+			#d3 {
+				width: 100px;
+				height: 100px;
+				
+				border: solid 1px black;
+				background-color: aqua;
+			
+				/* 当圆角设置50%时，正方形的元素会显示为圆形 */
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+
+		<hr id="hr">
+
+		<div id="d2"></div>
+
+		<div id="d3">元素圆角只能设置边框和背景为原型，内容还是矩形</div>
+
+	</body>
+</html>

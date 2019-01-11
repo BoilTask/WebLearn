@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			#box {
+				width: 200px;
+				background-color: aquamarine;
+
+				/* 块元素不设置高度时，高度会被内容撑开 */
+
+				height: 200px;
+
+				/* text-align: justify;两端对齐 */
+				/* text-align: justify; */
+
+				/* 如果块元素设置了高度,并且内容的高度大于设置的高度,则超出的部分会显示在元素之外 */
+
+				/* overflow: hidden;表示溢出部分的内容不显示 */
+				/* overflow: hidden; */
+
+				/* overflow: scroll;溢出的部分滚动查看,元素侧边会出现滚动条 */
+				/* overflow: scroll; */
+
+				overflow-y: scroll;
+
+			}
+
+			#shop-name {
+				width: 100px;
+				background-color: yellow;
+				font-size: 16px;
+
+				/* white-space: nowrap;不换行 */
+				white-space: nowrap;
+				
+				overflow: hidden;
+				
+				/* text-overflow: ellipsis;文本溢出之后,在文本末尾添加...，必须配合不换行和overflow: hidden使用 */
+				text-overflow: ellipsis;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<!-- 在元素内容中，英文单词之间以空格隔开，空格作为单词换行的依据，但是&nbsp;转义空格不会作为换行的依据，所以&nbsp;叫做非换行空格 -->
+			<!-- give me some sunshine,give me some rain,give me annother changce I wanna grow up once again. -->
+			该overflow-wrapCSS属性指定浏览器是否应该在单词中插入换行符，以防止文本溢出其内容框。与word-break相反，如果整个单词不能在没有溢出的情况下放在自己的行上，overflow-wrap将会创建一个中断。该属性最初是一个非标准的，没有前缀的微软扩展word-wrap，并被大多数的浏览器以该命名实现。现在，它已经被重新命名为overflow-wrap，而word-wrap则作为它一个别名。
+		</div>
+
+		<!-- title属性，用于设置鼠标指针在元素上悬停时弹出的提示文本 -->
+		<h3 id="shop-name" title="全郑州最好吃的价格最便宜的火锅店">全郑州最好吃的价格最便宜的火锅店</h3>
+
+	</body>
+</html>

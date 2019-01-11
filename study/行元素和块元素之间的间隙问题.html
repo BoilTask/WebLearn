@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			.item {
+				border: solid 1px black;
+				font-size: 17px;
+			}
+
+			#box {
+				font-size: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- html代码中换行符和多余的空格在页面渲染时都会被替换为一个小空格，所以行元素标签之间的换行会显示为一个空格，导致行元素之间产生一个空格的间隙 -->
+		<!-- 解决方法是为这些行元素添加一个共同的父元素，然后设置父元素的字体大小为0 -->
+		<div id="box">
+			<span class="item">首页</span>
+			<span class="item">图片</span>
+			<span class="item">设置</span>
+		</div>
+	</body>
+</html>
