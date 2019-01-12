@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<!-- <meta name="viewport" content="width=device-width,initial-scale=1" /> -->
 		<title>个人主页</title>
+		<link rel="stylesheet" type="text/css" href="icons/icon.css" />
 		<style>
 			body {
 				margin: 46px 0 0 0;
@@ -56,6 +57,7 @@
 
 				left: 0;
 				top: 0;
+				z-index: 1;
 			}
 
 			.nav ul {
@@ -89,12 +91,12 @@
 				position: relative;
 				margin: 0 auto;
 				border: solid 1px black;
-				
+
 				background-color: #EEEEEE;
-				
+
 			}
-			
-			#classmate1{
+
+			#classmate1 {
 				position: absolute;
 				left: 50px;
 				top: 200px;
@@ -102,13 +104,15 @@
 				height: 150px;
 				border-radius: 50%;
 			}
-			#classmate2{
+
+			#classmate2 {
 				position: absolute;
 				left: 300px;
 				top: 50px;
 				border-radius: 50%;
 			}
-			#classmate3{
+
+			#classmate3 {
 				position: absolute;
 				left: 600px;
 				top: 250px;
@@ -116,7 +120,50 @@
 				height: 100px;
 				border-radius: 50%;
 			}
-			
+
+			#cssspriteDiv {
+				width: 400px;
+				height: 300px;
+				margin: 0 auto;
+				border: solid 1px red;
+				font-size: 0;
+			}
+
+			#cssspriteDiv div {
+				display: inline-block;
+				width: 100px;
+				height: 100px;
+			}
+
+			#floatlist {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				background-color: black;
+			}
+
+			.clearfix:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+
+			#floatlist li {
+				float: left;
+			}
+
+			#floatlist li a {
+				border: solid 1px white;
+				text-decoration: none;
+				color: white;
+				padding: 2px;
+				margin: 2px;
+			}
+
+			#floatlist li a:hover {
+				background-color: white;
+				color: black;
+			}
 		</style>
 	</head>
 	<body>
@@ -127,6 +174,7 @@
 					<li><a href="#profile">个人简介</a></li>
 					<li><a href="#school">学校简介</a></li>
 					<li><a href="#classmate">我的同学</a></li>
+					<li><a href="#csssprite">图片精灵</a><i class="icon-cookie icon-25px"></i></li>
 				</ul>
 			</div>
 		</nav>
@@ -151,12 +199,35 @@
 				<img id="classmate2" src="classmate2.jpg" alt="classmate2">
 				<img id="classmate3" src="classmate3.jpg" alt="classmate3">
 			</div>
-		
+			<h2 id="csssprite">图片精灵</h2>
+			<div id="cssspriteDiv">
+				<div class="icon-star"></div>
+				<div class="icon-bell"></div>
+				<div class="icon-gift"></div>
+				<div class="icon-snowman"></div>
+				<div class="icon-candy"></div>
+				<div class="icon-tree"></div>
+				<div class="icon-cookie"></div>
+				<div class="icon-sock"></div>
+				<div class="icon-elk"></div>
+				<div class="icon-bow"></div>
+				<div class="icon-santa"></div>
+				<div class="icon-wreath"></div>
+			</div>
+
 		</div>
 		<div id="footer">
 			<div class="container footerDiv">
 				<span id="serverTime"></span>
-				<span>@BoilTask</span>
+				<span>
+					<ul id="floatlist" class="clearfix">
+						<li><a href="#profile">个人简介</a></li>
+						<li><a href="#school">学校简介</a></li>
+						<li><a href="#classmate">我的同学</a></li>
+						<li><a href="#csssprite">图片精灵</a></li>
+					</ul>
+				</span>
+				<span>@BoilTask@qq.com</span>
 			</div>
 		</div>
 		<script>
