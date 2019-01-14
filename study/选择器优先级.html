@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			/* !important>行内样式>id选择器>属性选择器>class选择器>标签名选择器 */
+
+			#box {
+				color: blue;
+			}
+
+			/* 当选择器优先级一样时，按照最后一个选择器的样式显示 */
+			.txt {
+				color: pink;
+			}
+
+			.line {
+				color: red;
+			}
+
+			[att] {
+				color: brown;
+			}
+
+			p {
+				/* !important，将本条样式的优先级提到最高 */
+				color: cyan !important;
+			}
+
+			/* 当多个选择器符合使用时,优先级权值会进行相加。 */
+			/* 选择器权值参考:
+				id选择器:1000
+				属性选择器：100
+				class选择器：10
+				标签名选择器：1
+			 */
+
+			/* 1000+10=1010 */
+			#box.line {
+				color: black;
+			}
+
+			/* 1111 */
+			p#box.line[att] {
+				color: blueviolet;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <p class="line" id="box" style="color: chartreuse;" att>不同的选择器具有不同的优先级</p> -->
+		<p class="line txt" id="box" att>不同的选择器具有不同的优先级</p>
+	</body>
+</html>

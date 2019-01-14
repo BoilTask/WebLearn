@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			#container {
+				width: 1000px;
+				display: flex;
+				border: solid 1px blue;
+				
+				/* 开启flex折行 */
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: space-between;
+			}
+			.item{
+				border: solid 1px black;
+				box-sizing: border-box;
+				background-color: red;
+				width: 100px;
+				height: 100px;
+				
+				margin: 20px;
+			}
+			.empty-item{
+				width: 100px;
+				height: 0;
+				margin: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="item">第1块</div>
+			<div class="item">第2块</div>
+			<div class="item">第3块</div>
+			<div class="item">第4块</div>
+			<div class="item">第5块</div>
+			<div class="item">第6块</div>
+			<div class="item">第7块</div>
+			<div class="item">第8块</div>
+			<div class="item">第9块</div>
+			<div class="item">第10块</div>
+			<div class="item">第11块</div>
+			<div class="item">第12块</div>
+			<div class="item">第13块</div>
+			<div class="item">第14块</div>
+			<div class="item">第15块</div>
+			<div class="item">第16块</div>
+			<div class="item">第17块</div>
+			<div class="empty-item"></div>
+			<div class="empty-item"></div>
+			<div class="empty-item"></div>
+			<div class="empty-item"></div>
+			<div class="empty-item"></div>
+			<div class="empty-item"></div>
+			<div class="empty-item"></div>
+		</div>
+	</body>
+</html>

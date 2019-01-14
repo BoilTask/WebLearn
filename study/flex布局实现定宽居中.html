@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			#container {
+				height: 100px;
+				border: solid 1px black;
+				display: flex;
+
+				/* width: 1600px; */
+
+				/* flex布局中，默认是不能折行的，如果父元素宽度有剩余，则会显示空白，如果父元素长度不够显示所有子元素，则会把超出的长度平均分配给每个子元素进行缩减 */
+			}
+
+			#d1 {
+				background-color: red;
+				/* width: 400px; */
+				/* flex-shrink,表示当父元素布局方向上尺寸不够时，本元素的缩小比例 */
+				/* flex-shrink的默认值为1 */
+				/* flex-shrink: 0; */
+				
+				flex-grow: 1;
+			}
+
+			#d2 {
+				background-color: aqua;
+				/* width: 400px; */
+				/* flex-shrink: 1; */
+				
+				/* flex-grow，表示flex布局的父元素在布局方向上有剩余空间时，本元素的增长比例，默认为0 */
+				/* flex-grow: 1; */
+				
+				width: 1000px;
+				flex-shrink: 0;
+			}
+
+			#d3 {
+				background-color: green;
+				/* width: 400px; */
+				/* flex-shrink: 2; */
+				/* flex-grow: 2; */
+				
+				flex-grow: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="d1"></div>
+			<div id="d2"></div>
+			<div id="d3"></div>
+		</div>
+	</body>
+</html>

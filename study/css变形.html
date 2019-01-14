@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			#d1 {
+				width: 100px;
+				height: 100px;
+				background-color: yellow;
+
+				/* transform，表示变形属性，其中translate表示位移，两个值分别为横向移动量和纵向移动量 */
+				transform: translate(100px, 20px);
+			}
+
+			#d2 {
+				width: 100px;
+				height: 100px;
+				background-color: red;
+
+			}
+
+			#d2:hover {
+				/* rotate，旋转变形，参数是旋转角度，正值为顺时针 */
+				transform: rotate(30deg);
+
+				/* transform-origin，表示变形原点，以元素的哪个位置进行变形，默认为50% */
+				transform-origin: 0% 0%
+			}
+
+			#d3 {
+				width: 100px;
+				height: 100px;
+				background-color: cyan;
+			}
+
+			#d3:hover {
+				/* scale()，表示缩放变形，两个参数分别是横向是原始高度的多少倍，纵向是原始高度的多少倍。 */
+				transform: scale(2,2);
+				transform-origin: 0% 0%
+
+			}
+			#d4 {
+				width: 100px;
+				height: 100px;
+				background-color: greenyellow;
+				
+				transform:skew(30deg);
+				
+				transform: scale(2,2) skew(30deg);
+				
+				/* transform: matrix(1,2,3,4,5,6); */
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="d1">第一块</div>
+		<div id="d2">第二块</div>
+		<div id="d3">第三块</div>
+		<div id="d4">第四块</div>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			body {
+				background-image: url(bg.jpg);
+			}
+
+			.box {
+				width: 100px;
+				height: 100px;
+			}
+
+			#d1 {
+				/* background-color: red; */
+				/* 颜色也可以设置透明色,通过rgba,a表示透明度,范围0~1 */
+				/* 设置背景色透明仅仅是元素背景透明，元素内容不透明 */
+				background-color: rgba(255, 0, 0, 0.5);
+			}
+
+			#d2 {
+				background-color: green;
+				/* display: none;可以隐藏一个元素，这种隐藏方式会使元素脱离文档流，文档流中不再有它的位置 */
+				/* display: none; */
+
+				/* visibility: hidden;也可以隐藏元素，这种隐藏方式仅仅是让元素不可见，文档流中还保留它的位置 */
+				visibility: hidden;
+			}
+
+			#d3 {
+				background-color: blue;
+
+				/* opacity，设置一个元素的透明度，范围0~1，0为完全透明，0.5半透明，设置为0之后，元素将不可见 */
+				/* opacity设置整个元素透明，背景和内容等都透明 */
+				opacity: 0.5;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box" id="d1">第1行</div>
+		<div class="box" id="d2">第2行</div>
+		<div class="box" id="d3">第3行</div>
+	</body>
+</html>

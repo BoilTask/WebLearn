@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 600px;
+            height: 600px;
+            border: solid 1px black;
+            position: relative;
+        }
+
+        #inner{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+
+            /* 要实现子元素在父元素中上下左右居中。 */
+
+            /* 1，绝对定位 */
+            position: absolute;
+
+            /* 2,上下左右都设为0 */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            /* 3,自动外间距 */
+            margin: auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="inner"></div>
+    </div>
+</body>
+</html>

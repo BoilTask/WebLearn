@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			/* p，选择页面中所有的p标签 */
+			p {
+				font-size: 20px;
+			}
+
+			/* 选择页面中id值为first的标签 */
+			#first {
+				color: aqua;
+			}
+
+			/* 选择页面中class值包含line的元素 */
+			.line {
+				text-decoration: underline;
+			}
+
+			/* *选择器，选择所有的标签 */
+			* {
+				box-sizing: border-box;
+			}
+
+			/* 属性选择器，选择页面中属性包含att的标签 */
+			[att] {
+				color: blue;
+				text-decoration: underline;
+				/* cursor，设置光标悬停在元素上时的样式 */
+				cursor: pointer;
+			}
+
+			/* 选择页面中,att属性值为123的元素 */
+			[att="123"] {
+				font-weight: bold;
+				font-style: italic;
+			}
+
+			/* 多个选择器可以连续使用。 */
+			/* 多个选择器连续拼接，表示“并且” */
+			/* 选择器1选择器2，同时满足选择器1和选择器2 */
+
+			/* 选择页面中标签名是div，且id值时box的元素且class中包含rect */
+			div#box.rect {}
+
+			/* 多个选择器使用,隔开连用，表示“或者” */
+			/* 选择器1,选择器2，表示满足选择器1或者选择器2 */
+
+			/* 选择页面中class值包含one或者包含two的元素 */
+			.one,
+			.two {}
+
+			/* 多个选择器之间使用空格隔开，表示包含 */
+			/* 选择器1 选择器2，表示满足选择器1的元素中满足选择器2的后代元素 */
+
+			/* 选择id值为box的元素中的p标签 */
+			#box p {}
+
+			/* 多个选择器使用>隔开,表示子元素 */
+			/* 选择器1>选择器2，表示选择器1元素中的选择器2子元素 */
+
+			/* 选择id值是box元素中的p标签子元素 */
+			#box>p {}
+
+			/* 选择器1+选择器2，表示选择器1元素后面的选择器2元素 */
+			/* id值为box的元素后面的哪个p标签 */
+			#box+p {}
+
+			/* nth-of-type(1)选择某个父元素中第n个满足本选择器的标签*/
+			/* 2n表示第偶数个，2n+1表示奇数个 */
+			#list li:nth-of-type(1) {
+				color: red;
+			}
+
+			/* nth-last-of-type倒数第n个*/
+			#list li:nth-last-of-type(1) {
+				color: yellowgreen;
+			}
+		</style>
+	</head>
+	<body>
+		<p>标签名选择器，选择页面中所有同名标签</p>
+		<p id="first">id选择器</p>
+		<p class="line">class选择器</p>
+		<div>*选择器</div>
+		<p att="123">属性选择器</p>
+		<ul id="list">
+			<li>第1行</li>
+			<li>第2行</li>
+			<li>第3行</li>
+			<li>第4行</li>
+			<li>第5行</li>
+		</ul>
+	</body>
+</html>
