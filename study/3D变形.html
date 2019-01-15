@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			body{
+				/* 3D变形，必须设置观察视角距离之后才能看出3D效果 */
+				perspective: 1000px;
+			}
+			#d1 {
+				width: 100px;
+				height: 100px;
+				background-color: aqua;
+				margin: 60px auto;
+				transition: all 0.5s;
+				
+				transform-origin: 0% 50%;
+			}
+			#d1:hover{
+				transform: rotateY(-180deg);
+
+			}
+		</style>
+	</head>
+	<body>
+		<div id="d1">3D变形</div>
+		
+	</body>
+</html>

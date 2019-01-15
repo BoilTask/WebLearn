@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			#box {
+				width: 200px;
+				height: 200px;
+				background-color: pink;
+				margin: 0 auto;
+				
+				/* 当元素的某个样式发生改变时，默认情况下是瞬间完成改变 */
+				/* 如果给某个样式设置了过渡效果，则这个样式在发生变化时，是以动画的形式完成的 */
+				/* transition，设置元素的过渡效果，至少需要设置过渡样式和过渡时间 */
+				/* transition: border-radius 0.5s; */
+				transition: all 0.5s;
+				
+				/* 可以指定多个 */
+				/* transition-property:border-radius,background-color; */
+				
+				/* 设置过渡动画的速率，默认为慢快慢 */
+				/* transition-timing-function: linear; */
+				
+				/* 样式过渡有一个非常重要的条件：要过渡的样式必须有初始值 */
+				border: solid 0px red;
+			}
+			#box:hover{
+				border-radius: 50%;
+				background-color: yellow;
+				
+				/* 并不是所有的样式都能过渡，只有那些具有中间值的属性可以 */
+				/* text-align: center; */
+				transform: rotate(180deg) scale(1.3,1.3);
+				border: solid 10px red;
+			}
+			#box:active{
+				/* box-shadow，设置元素阴影，5个参数分别为，横向偏移量，纵向偏移量，模糊程度，阴影大小，阴影颜色 */
+				box-shadow: 0 0 20px 0 red;
+			}
+			#d2{
+				background-color: aqua;
+				height: 100px;
+				width:100%;
+				transition: all 0.5s;
+			}
+			#d2:hover{
+				width: 500px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+		<div id="d2"></div>
+	</body>
+</html>

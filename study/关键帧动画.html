@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			/* 使用关键帧动画，需要先创建动画，然后把动画添加到元素上 */
+			/* @keyframes，用于创建一个关键帧动画，需要指定一个动画名字 */
+			@keyframes rect {
+
+				/* 创建关键帧动画时，需要设置每一个关键帧元素的样式 */
+				0% {
+					transform: translate(0, 0);
+				}
+				25%{
+					transform: translate(100px,0);
+				}
+				50%{
+					transform: translate(100px,100px);
+				}
+				75%{
+					transform: translate(0,100px);
+				} 
+				
+				100% {
+					transform: translate(300px, 0);
+				}
+			}
+
+
+			#box {
+				height: 100px;
+				width: 100px;
+				background-color: bisque;
+				/* 可以直接在元素的样式中添加动画，但是一般为了动画使用方便，会把添加动画的样式写在一个class中，然后为需要做动画的元素添加这个class */
+				/* animation: ;				 */
+			}
+
+			.rect-ani {
+				/* 为元素添加动画，至少要设置动画名字和动画时间 */
+				animation: rect 2s;
+				/* animation-timing-function，设置动画速率 */
+				animation-timing-function: linear;
+
+				/* 设置动画开始时和结束后是否保留动画中的样式 */
+				animation-fill-mode: both;
+
+				/* 设置动画执行方向 */
+				/* animation-direction: alternate-reverse; */
+
+				/* 设置动画延迟，等待多少秒之后才开始动画，如果设置为负值，则可跳过动画开头的n秒 */
+				/* animation-delay: 1s; */
+
+				/* 设置动画执行次数，infinite表示无限次 */
+				animation-iteration-count: infinite;
+			}
+
+			#box:hover {
+				/* 设置动画播放状态，paused表示暂停 */
+				animation-play-state: paused;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 过渡动画只能实现元素在两个状态之间的变化动画，而且动画还能执行一次。 -->
+		<!-- 如果要让元素在多个状态之间做动画，且执行多次，则需要使用CSS关键帧动画 -->
+		<div id="box" class="rect-ani"></div>
+	</body>
+</html>

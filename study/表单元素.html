@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			#i1{
+				width: 200px;
+				height: 40px;
+				border: solid 1px blue;
+				border-radius: 5px;
+				font-size: 20px;
+				padding-left: 10px;
+			}
+			
+			#i1:focus{
+				border: solid 1px purple;
+			}
+			
+			#i1:disabled{
+				border: solid 2px grey;
+			}
+			#btn{
+				width: 400px;
+				height: 40px;
+				background-color: skyblue;
+				border: none;
+				border-radius: 4px;
+				font-size: 20px;
+				color: white;
+				cursor: pointer;
+			}
+			#t1{
+				width: 600px;
+				height: 300px;
+				resize:none;
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- lable标签，用于关联一个input等表单元素，把for属性设置为要关联的元素的id，关联之后，点击lable就相当于点击了关联的元素 -->
+		<label for="i1">账号：</label>
+		<!-- input标签，type决定input的作用，默认为text -->
+		<!-- 当type="text"时，显示为一个输入框 -->
+		<!-- input type="text"时,默认为行内块元素,可设置宽高 -->
+		<!-- placeholder属性用于设置输入框的占位符，value属性用于设置input的初始内容 -->
+
+		<input id="i1" type="text" placeholder="请输入用户名" disabled>
+		<br>
+		<!-- type="password"时，显示一个输入密码的输入框，密码输入框中的文本内容不可见。 -->
+		<input type="password">
+		<br>
+		<!-- <input type="number"> -->
+
+		<p>请选择您的性别</p>
+		<label for="">男</label>
+		<!-- type="radio"时，显示为单选框，将多个单选框设置相同的name属性，可以把这些单选框列为同一组，同一组的单选框只能选中一个 -->
+		<input type="radio" name="gender">
+		<label for="">女</label>
+		<input type="radio" name="gender">
+		<label for="">保密</label>
+		<!-- 通过checked可以设置默认选中的选项 -->
+		<input type="radio" name="gender" checked>
+
+		<p>请选择您的兴趣爱好</p>
+		<label>玩游戏</label>
+		<!-- type="checkbox"，多选框 -->
+		<input type="checkbox">
+		<label>唱歌</label>
+		<input type="checkbox" checked>
+		<label>篮球</label>
+		<input type="checkbox" checked>
+
+		<br>
+
+		<!-- type="file"，显示为一个文件选择器 -->
+		<input type="file">
+
+		<!-- input还有一些其他不常用的type -->
+		<input type="color"><input type="date">
+
+		<hr>
+
+		<button id="btn">注&emsp;&emsp;册</button>
+
+		<hr>
+
+		<label>请选择您的专业</label>
+		<select>
+			<!-- 下拉列表中通过option标签添加选项 -->
+			<option>Web前端</option>
+			<option>Java</option>
+			<option>Unity3D</option>
+			<!-- selected属性设置默认选项 -->
+			<option selected>Python</option>
+		</select>
+		<!-- 可以设置使用ctrl多选的下拉列表 -->
+		<!-- 
+		<select multiple>
+			<option>Web前端</option>
+			<option>Java</option>
+			<option selected>Unity3D</option>
+			<option selected>Python</option>
+		</select>
+		 -->
+		<hr>
+		
+		<!-- textarea，文本输入区，相比input，可以输入多行文本 -->
+		<textarea id="t1"></textarea>
+
+	</body>
+</html>
