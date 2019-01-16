@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			#container {
+				width: 1200px;
+				border: solid 1px red;
+				margin:0 auto;
+			}
+
+			#container:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+
+			.item {
+				width: 25%;
+				height: 100px;
+				border: solid 1px black;
+				float: left;
+				box-sizing: border-box;
+			}
+
+			.item:nth-of-type(2n+1) {
+				background-color: red;
+			}
+
+			.item:nth-of-type(2n) {
+				background-color: blue;
+			}
+			
+			/* @media，媒体查询条件，max-width:1200px表示当页面小于1200px时，媒体查询的{}中可以添加一些CSS规则，这些规则仅在页面满足媒体查询条件时生效 */
+			@media(max-width:1200px){
+				
+				#container {
+					width: 900px;
+				}
+				.item {
+					width: 33.33%;
+				}
+			}
+			@media(max-width:900px){
+				
+				#container {
+					width: 600px;
+				}
+				.item {
+					width: 50%;
+				}
+			}
+			@media(max-width:600px){
+				
+				#container {
+					width: 100%;
+					margin: 0;
+				}
+				.item {
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</body>
+</html>
