@@ -1,0 +1,263 @@
+body,
+dl,
+dd,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form {
+	margin: 0;
+}
+
+td,
+th,
+ul,
+ol {
+	padding: 0;
+	padding-left: 0px;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+body {
+	padding-top: 42px;
+	background: #fff;
+}
+
+header {
+	position: absolute;
+	left: 0;
+	top: 42px;
+	width: 100%;
+	min-width: 1280px;
+	height: 84px;
+	z-index: 99;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.clearfix::after {
+	content: '\20';
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+.nav {
+	width: 1200px;
+	height: 84px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.logo {
+	/* border: solid 1px #000000; */
+	left: 0;
+	top: 16px;
+	z-index: 100;
+	background: url(//game.gtimg.cn/images/yxzj/web201706/images/comm/logo.png) no-repeat center center;
+	width: 200px;
+	height: 54px;
+	text-indent: -999px;
+	overflow: hidden;
+}
+
+.pa {
+	position: absolute;
+}
+
+.nav ul {
+	list-style: none;
+}
+
+.nav-list {
+	width: 790px;
+	/* border: solid 1px #000000; */
+	padding-left: 230px;
+	margin: 0;
+}
+
+.nav-item {
+	float: left;
+	width: 110px;
+	height: 84px;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.nav-item a {
+	display: block;
+	width: 110px;
+	height: 64px;
+	padding: 20px 0 0;
+	color: #c9c9dd;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+em,
+i,
+b {
+	font-style: normal;
+}
+
+.nav-item a em {
+	display: block;
+	padding-top: 5px;
+	-webkit-transform: scale(0.95);
+	-o-transform: scale(0.95);
+	font-size: 12px;
+	line-height: 16px;
+	color: #858792;
+}
+
+.sub-nav {
+	position: absolute;
+	top: 83px;
+	left: 0;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 30px;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 3;
+	visibility: hidden;
+}
+
+.sub-nav ul {
+	width: 970px;
+	height: 240px;
+	padding-left: 230px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.sub-nav ul li {
+	float: left;
+	display: inline;
+	width: 100px;
+	padding: 2px 5px 0;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.sub-nav ul li a {
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	padding: 0;
+	font-size: 14px;
+	color: #c9c9dd;
+}
+
+.icon-fans {
+	overflow: hidden;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	background: url(//game.gtimg.cn/images/yxzj/web201706/images/comm/index.png) no-repeat -136px -5px;
+	background-position: -137px -68px;
+}
+
+.icon-guard {
+	overflow: hidden;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	background: url(//game.gtimg.cn/images/yxzj/web201706/images/comm/index.png) no-repeat -136px -5px;
+}
+
+.icon-health {
+	overflow: hidden;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	background: url(//game.gtimg.cn/images/yxzj/web201706/images/comm/index.png) no-repeat -136px -5px;
+	background-position: -137px -36px;
+}
+
+.nav-list li:hover {
+	background: url(//game.gtimg.cn/images/yxzj/web201706/images/comm/index.png) no-repeat;
+	display: inline-block;
+}
+
+.nav-list li:hover a {
+	color: #e4b653;
+}
+
+.main-nav li:hover em {
+	color: #91763f;
+}
+
+.login {
+	position: absolute;
+	right: 0px;
+	top: 21px;
+	width: 182px;
+	height: 45px;
+	border: solid 1px white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.login div{
+	color: white;
+	font-size: 18px;
+}
+
+.ost_box {
+	width: 100%;
+	position: absolute;
+	color: #464646;
+	left: 0;
+	top: 0 !important;
+	font-size: 12px;
+	z-index: 8000;
+	font-family: Tahoma, simsun;
+	border: 1px solid #c9c9c9;
+	border-width: 1px 0;
+	background: url(//ossweb-img.qq.com/images/js/topfiles/ost1410/ost-bg.png) no-repeat;
+	min-width: 980px;
+	text-align: left;
+}
+
+main {
+	overflow: hidden;
+	position: relative;
+	min-width: 1280px;
+}
+
+.kv-bg {
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 1100px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-image: url(//ossweb-img.qq.com/upload/webplat/info/yxzj/20190116/82470431476138.jpg);
+}
+
+.content {
+	height: 1000px;
+}
