@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>数学练习</title>
+		<link rel="stylesheet" type="text/css" href="app.css" />
+		<script src="app.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="background">
+			<div class="container">
+				<h1 style="text-align: center;">数学♂练习</h1>
+				<div id="mulDiv" class="question">
+					<div class="control">
+						<label>小数乘法：</label>
+						<div class="inputGruop">
+							<input type="number" id="mulNum" value="0"><label>道</label>
+						</div>
+
+						<button type="button" id="mulBtn" onclick="GenMul()">生成</button>
+					</div>
+					<div id="mulquestion"></div>
+					<div id="mulanswer"></div>
+				</div>
+				<div id="divDiv" class="question">
+					<div class="control">
+						<label>小数除法：</label>
+						<div class="inputGruop">
+							<input type="number" id="divNum" value="0"><label>道</label>
+						</div>
+						<button type="button" id="divBtn" onclick="GenDiv()">生成</button>
+					</div>
+					<div id="divquestion"></div>
+					<div id="divanswer"></div>
+				</div>
+				<div id="genDiv" class="question">
+					<div class="control">
+						<label>分数通分：</label>
+						<div class="inputGruop">
+							<input type="number" id="genNum" value="0"><label>道</label>
+						</div>
+						<button type="button" id="genBtn" onclick="GenGen()">生成</button>
+					</div>
+					<div id="genquestion"></div>
+					<div id="genanswer"></div>
+				</div>
+				<div id="appDiv" class="question">
+					<div class="control">
+						<label>分数约分：</label>
+						<div class="inputGruop">
+							<input type="number" id="appNum" value="0"><label>道</label>
+						</div>
+						<button type="button" id="appBtn" onclick="GenApp()">生成</button>
+					</div>
+					<div id="appquestion"></div>
+					<div id="appanswer"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

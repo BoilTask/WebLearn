@@ -1,0 +1,196 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+
+.background {
+	background: linear-gradient(#00CCFF, #FFFFFF);
+	color: white;
+	overflow: hidden;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 30px;
+	border: solid 1px white;
+
+	margin-top: 50px;
+
+	border-radius: 10px;
+}
+
+.question {
+	width: 80%;
+	/* height: 500px; */
+	border: solid 1px #1E90FF;
+	margin: 20px auto;
+
+	background-color: #CCCCCC
+}
+
+.control {
+	width: 80%;
+	margin: 30px auto;
+	/* background-color: grey; */
+
+	display: flex;
+	justify-content: space-around;
+}
+
+.control label {
+	font-size: 20px;
+	line-height: 40px;
+}
+
+input {
+	border: 1px solid #ccc;
+	padding: 7px 0px;
+	border-radius: 3px;
+	/*css3属性IE不支持*/
+	padding-left: 5px;
+
+	font-size: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+button {
+	/* 按钮美化 */
+	width: 200px;
+	/* 宽度 */
+	height: 40px;
+	/* 高度 */
+	border-width: 0px;
+	/* 边框宽度 */
+	border-radius: 3px;
+	/* 边框半径 */
+	background: #1E90FF;
+	/* 背景颜色 */
+	cursor: pointer;
+	/* 鼠标移入按钮范围时出现手势 */
+	outline: none;
+	/* 不显示轮廓线 */
+	font-family: Microsoft YaHei;
+	/* 设置字体 */
+	color: white;
+	/* 字体颜色 */
+	font-size: 17px;
+	/* 字体大小 */
+}
+
+button:hover {
+	/* 鼠标移入按钮范围时改变颜色 */
+	background: #5599FF;
+}
+
+#mulquestion,
+#divquestion,
+#genquestion,
+#appquestion {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#mulquestion .item,
+#divquestion .item {
+	height: 50px;
+	width: 200px;
+	background: #000000;
+	margin: 10px;
+
+	font-size: 20px;
+	text-align: center;
+	padding-top: 15px;
+}
+
+#mulanswer,
+#divanswer,
+#genanswer,
+#appanswer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	color: #000000;
+}
+
+#mulanswer:hover,
+#divanswer:hover,
+#genanswer:hover,
+#appanswer:hover {
+	color: #FFFFFF;
+}
+
+#mulanswer .item-res,
+#divanswer .item-res {
+
+
+	background: #000000;
+	margin: 10px;
+
+	font-size: 20px;
+	text-align: center;
+}
+
+#genquestion .item,
+#genanswer .item-res {
+	width: 150px;
+	background: #000000;
+	margin: 10px;
+
+	font-size: 20px;
+	text-align: center;
+
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#genquestion .item div,
+#genanswer .item-res div {
+	width: 40%;
+}
+
+#genquestion .item div:nth-child(-n+2) {
+	border-bottom: solid 1px white;
+}
+
+#genanswer:hover .item-res div:nth-child(-n+2) {
+	border-bottom: solid 1px white;
+}
+
+#appquestion .item,
+#appanswer .item-res {
+	width: 50px;
+	background: #000000;
+	margin: 10px;
+
+	font-size: 20px;
+	text-align: center;
+
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#appquestion .item div,
+#appanswer .item-res div {
+	width: 80%;
+}
+
+#appquestion .item div:nth-child(1) {
+	border-bottom: solid 1px white;
+}
+
+#appanswer:hover .item-res div:nth-child(1) {
+	border-bottom: solid 1px white;
+}
