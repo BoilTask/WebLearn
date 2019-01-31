@@ -13,8 +13,8 @@ function GenMul() {
 		var a = Math.random() * 100;
 		a = a.toFixed(2);
 
-		var b = Math.random() * 100;
-		b = b.toFixed(2);
+		var b = Math.random() * 10;
+		b = b.toFixed(1);
 
 		item.innerHTML = a + " × " + b + " =";
 
@@ -47,6 +47,10 @@ function GenDiv() {
 
 		var b = Math.random() * 10;
 		b = b.toFixed(1);
+		while (b == 0.0) {
+			b = Math.random() * 10;
+			b = b.toFixed(1);
+		}
 
 		item.innerHTML = a + " ÷ " + b + " =";
 
@@ -144,7 +148,7 @@ function GenApp() {
 		item_num.innerHTML = b;
 		item.appendChild(item_num);
 
-		var c = gcd(a,b);
+		var c = gcd(a, b);
 		a = a / c;
 		b = b / c;
 
